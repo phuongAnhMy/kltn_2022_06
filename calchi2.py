@@ -79,10 +79,10 @@ def load_data(data_path, num_aspects):
 #         df = pd.DataFrame(chi2_dict, columns=['word', 'score', 'pvalue'])
 #         df = df.sort_values('score', ascending=False)
 #         res.append(df)
-#         with open("data/chi2/tech_tiki/chi2/tech_tiki_vocab_{}.txt".format(i), 'w', encoding='utf8') as f:
+#         with open("data/chi2/tech/chi2/tech_tiki_vocab_{}.txt".format(i), 'w', encoding='utf8') as f:
 #             for w, s, p in zip(df['word'], df['score'], df['pvalue']):
 #                 f.write('{} \t {} \t {}\n'.format(w, s, p))
-#         # df.to_csv("data/chi2/tech_tiki/chi2/tech_tiki_vocab_{}.csv".format(i), encoding='utf-8')
+#         # df.to_csv("data/chi2/tech/chi2/tech_tiki_vocab_{}.csv".format(i), encoding='utf-8')
 #     return res
 
 
@@ -106,5 +106,5 @@ def preprocess_inputs(inputs, outputs, text_len, num_aspects):
     # df = Chi2(inp, outp, num_aspects)
     return inp, outp
 
-# inputs, outputs = load_data('data/raw_data/tech_tiki.csv', 8)
+# inputs, outputs = load_data('data/raw_data/tech.csv', 8)
 # inputs, outputs, ndf = preprocess_inputs(inputs, outputs, 50, 8)

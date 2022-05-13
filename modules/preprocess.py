@@ -17,8 +17,8 @@ def load_aspect_data_du_lich(path):
         t = str(r['text']).strip()
         inputs.append(Input(t).__str__())
 
-        labels = list(range(9))
-        scores = [0 if r['aspect{}'.format(i)] == 0 else 1 for i in range(1, 10)]
+        labels = list(range(7))
+        scores = [0 if r['aspect{}'.format(i)] == 0 else 1 for i in range(1, 8)]
         outputs.append(AspectOutput(labels, scores))
 
     return inputs, outputs

@@ -30,7 +30,4 @@ def Chi2(inputs, outputs, num_aspects):
         df = pd.DataFrame(chi2_dict, columns=['word', 'score', 'pvalue'])
         df = df.sort_values('score', ascending=False)
         print('OK')
-        with open(r"/Users/minhdam/Desktop/mebe dup/data/chi2/data_{}/{}_chi2_dict/{}_{}.txt".format(str(sys.argv[1])[0:4], str(sys.argv[1]), str(sys.argv[1]), categories[i]), 'w', encoding='utf8') as f:
-            for w, s, p in zip(df['word'], df['score'], df['pvalue']):
-                f.write('{} \t {} \t {}\n'.format(w, s, p))
         return df

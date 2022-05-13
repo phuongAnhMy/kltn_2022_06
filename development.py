@@ -3,7 +3,7 @@ import pickle
 
 if __name__ == '__main__':
     for i in range(8):
-        df = pd.read_csv('data/raw_data/label_{}_tech_tiki.csv'.format(i), encoding="utf-8")
+        df = pd.read_csv('data/raw_data/label_{}_mebe_shopee.csv'.format(i), encoding="utf-8")
         data = df[['text', '_score']]
         new_data = []
         for k in range(len(df['text'])):

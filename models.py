@@ -1,9 +1,4 @@
 
-# class Document:
-#
-# class Sentence:
-#
-# class Token:
 
 
 class Input:

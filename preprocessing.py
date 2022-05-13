@@ -148,7 +148,7 @@ data_paths = [
     r"/Users/minhdam/Downloads/review/data/mebe_shopee.csv",
     r"/Users/minhdam/Downloads/review/data/mebe_tiki.csv",
     r"/Users/minhdam/Downloads/review/data/tech_shopee.csv",
-    r"/Users/minhdam/Downloads/review/data/tech_tiki.csv.csv",
+    r"/Users/minhdam/Downloads/review/data/tech.csv.csv",
 ]
 text_len = [100, 100, 100, 100]  # 30, 38, 55, 52
 
